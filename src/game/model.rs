@@ -7,15 +7,15 @@ use std::collections::HashMap;
 
 static ACTOR_FOV: u8 = 0;
 
-struct Board {
+pub struct Board {
     width: usize,
     height: usize,
 }
 
 pub struct Model {
-    board: Board,
-    actors: HashMap<Actor, Pos>,
-    actor_fov: u8,
+    pub board: Board,
+    pub actors: HashMap<Actor, Pos>,
+    pub actor_fov: u8,
 }
 
 impl Model {

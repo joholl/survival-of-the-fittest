@@ -3,6 +3,7 @@ pub struct Dist {
     pub distance: f32,
 }
 
+#[derive(Copy, Clone, PartialEq)]
 pub struct Pos {
     pub x: f32,
     pub y: f32,
