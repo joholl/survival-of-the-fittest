@@ -1,9 +1,16 @@
 use nannou::prelude::*;
 
+mod game {
+    mod actor;
+    pub mod controller;
+    mod model;
+    mod utils;
+}
 struct Model {}
 
 fn main() {
     nannou::app(model).event(event).simple_window(view).run();
+    // game::controller::start();
 }
 
 fn model(_app: &App) -> Model {
